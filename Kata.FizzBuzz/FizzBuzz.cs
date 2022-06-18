@@ -2,11 +2,11 @@
 {
     public static class FizzBuzz
     {
-        public static string PrintNumber()
+        public static string PrintNumber(int n)
         {
             var number = string.Empty;
-            for (int i = 0; i < 100; i++)
-                number += IsFizz(i) ? " " + "Fizz" : (IsBuzz(i) ?  " " + "Buzz" : " " + i);
+            for (int i = 1; i <= n; i++)
+                number += IsFizzBuzz(i) ? " " + "FizzBuzz" : IsFizz(i) ? " " + "Fizz" : IsBuzz(i) ?  " " + "Buzz" : " " + i;
                 
 
             return number.Trim();
@@ -22,5 +22,9 @@
             return n % 5 == 0;
         }
         
+        public static bool IsFizzBuzz(int n)
+        {
+            return IsFizz(n) && IsBuzz(n);
+        }
     }
 }
