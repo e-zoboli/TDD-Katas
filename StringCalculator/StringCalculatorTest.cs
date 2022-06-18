@@ -24,5 +24,34 @@ namespace Kata.StringCalculator
         {
             Assert.Equal(15, StringCalculator.Add("1,2,3,4,5"));
         }
+        [Fact]
+        public void TestWithNewLineSeparatorOtherThanComma()
+        {
+            Assert.Equal(6, StringCalculator.Add("1\n2,3"));
+        }
+        [Fact]
+        public void TestWithDifferentDelimiters()
+        {
+            Assert.Equal(6, StringCalculator.Add("//;\n1;2,3"));
+        }
+        [Fact]
+        public void TestWithNumberAsStringInputGreaterThanThousand()
+        {
+            Assert.Equal(6, StringCalculator.Add("//;\n1;1001;2,3, 1001"));
+        }
+        [Fact]
+        public void TestWithANegativeNumberShoulThrowArgumentException()
+        {
+            string expectedErrMessage = "negatives not allowed: -3";
+            var ex = Assert.Throws<ArgumentException>(() => StringCalculator.Add("//;\n1;2,-3"));
+            Assert.Equal(expectedErrMessage, ex.Message);
+        }
+        [Fact]
+        public void TestWithMultipleNegativeNumberShoulThrowArgumentException()
+        {
+            string expectedErrMessage = "negatives not allowed: -3,-4,-8";
+            var ex = Assert.Throws<ArgumentException>(() => StringCalculator.Add("//;\n1;2,-3,-4,1,-8"));
+            Assert.Equal(expectedErrMessage, ex.Message);
+        }
     }
 }
