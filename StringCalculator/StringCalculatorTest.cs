@@ -40,14 +40,14 @@ namespace Kata.StringCalculator
             Assert.Equal(6, StringCalculator.Add("//;\n1;1001;2,3, 1001"));
         }
         [Fact]
-        public void TestWithANegativeNumberShoulThrowArgumentException()
+        public void TestWithANegativeNumberShouldThrowArgumentException()
         {
             string expectedErrMessage = "negatives not allowed: -3";
             var ex = Assert.Throws<ArgumentException>(() => StringCalculator.Add("//;\n1;2,-3"));
             Assert.Equal(expectedErrMessage, ex.Message);
         }
         [Fact]
-        public void TestWithMultipleNegativeNumberShoulThrowArgumentException()
+        public void TestWithMultipleNegativeNumberShouldThrowArgumentException()
         {
             string expectedErrMessage = "negatives not allowed: -3,-4,-8";
             var ex = Assert.Throws<ArgumentException>(() => StringCalculator.Add("//;\n1;2,-3,-4,1,-8"));
