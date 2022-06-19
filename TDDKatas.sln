@@ -5,9 +5,11 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.StringCalculator", "StringCalculator\Kata.StringCalculator.csproj", "{525F7F4A-F946-4E90-85D3-032ADCDE2BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.FizzBuzz", "Kata.FizzBuzz\Kata.FizzBuzz.csproj", "{238DCB3E-295E-4048-9E72-1C853E0741D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.FizzBuzz", "Kata.FizzBuzz\Kata.FizzBuzz.csproj", "{238DCB3E-295E-4048-9E72-1C853E0741D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintResult", "PrintResult\PrintResult.csproj", "{A84FD3E2-D9E9-4CC5-8768-E3871441256F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintResult", "PrintResult\PrintResult.csproj", "{A84FD3E2-D9E9-4CC5-8768-E3871441256F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.KarateChop", "Kata.KarateChop\Kata.KarateChop.csproj", "{988594D6-2179-48B5-A2B5-EB9566534878}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A84FD3E2-D9E9-4CC5-8768-E3871441256F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A84FD3E2-D9E9-4CC5-8768-E3871441256F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A84FD3E2-D9E9-4CC5-8768-E3871441256F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988594D6-2179-48B5-A2B5-EB9566534878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988594D6-2179-48B5-A2B5-EB9566534878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988594D6-2179-48B5-A2B5-EB9566534878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988594D6-2179-48B5-A2B5-EB9566534878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
