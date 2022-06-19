@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Kata.FizzBuzz\Kata.FizzBuzz.csproj" />
+    <ProjectReference Include="..\Kata.KarateChop\Kata.KarateChop.csproj" />
   </ItemGroup>
 
 </Project>
