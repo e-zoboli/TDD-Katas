@@ -43,5 +43,25 @@ namespace Kata.KarateChop
 
 
         }
+
+        public static int SearchRecursively(int toFind, int[] numbers, int left, int right)
+        {
+            if (numbers.Length <= 0)
+                return -1;
+
+            int middle = (left + right) / 2;
+
+            if (numbers[middle] == toFind)
+                return middle;
+
+            
+            if (numbers[middle] > toFind)
+                return SearchRecursively(toFind, numbers, left , middle-1);
+
+            if (right < left) return -1;
+
+            return SearchRecursively(toFind, numbers, middle + 1, right);
+            
+        }
     }
 }
